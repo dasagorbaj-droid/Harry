@@ -1,0 +1,103 @@
+/* Cкопіюй код з минулого уроку */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('https://7fon.club/uploads/posts/2023-01/1673699234_30-7fon-club-p-fon-dlya-prezentatsii-garri-potter-31.jpg');
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.app-container {
+    width: 500px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.screen {
+    padding: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#answers-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+#start-btn,
+#restart-btn,
+#hint-btn {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: inherit;
+    font-size: 18px;
+}
+
+#hint-btn {
+    margin-top: 20px;
+}
+
+#hint-btn:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+#answers-container button {
+    box-sizing: border-box;
+    padding: 10px 20px;
+    background: none;
+    border: none;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: inherit;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 45%;
+    text-align: center;
+}
+
+#answers-container button:hover:not(:disabled) {
+    color: #ffffff;
+    transform: scale(1.08);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+#answers-container button:disabled {
+    cursor: default;
+}
+
+#answers-container .correct {
+    color: white;
+}
+
+#answers-container .wrong {
+    color: white;
+}

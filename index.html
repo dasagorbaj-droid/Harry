@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+
+        <div id="start-screen" class="screen">
+            <h1>Вікторина</h1>
+            <button id="start-btn" type="button">Почати</button>
+        </div>
+
+        <div id="quiz-screen" class="screen hide">
+            <div class="header">
+                <span id="timer">Час: 15</span>
+                <span id="score-display">Бали: 0</span>
+            </div>
+
+            <h2 id="question-text">Питання</h2>
+            <div id="answers-container"></div>
+
+            <button id="hint-btn" type="button">Підказка 50/50</button>
+        </div>
+
+        <div id="result-screen" class="screen hide">
+            <h2>Квіз завершено!</h2>
+            <p id="result-text"></p>
+            <button id="restart-btn" type="button">Спробувати ще</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
